@@ -1,49 +1,108 @@
-# ERC20 Payment Splitter 🪙
+# 🌿 ERC20 Payment Splitter
 
-An Ethereum-based decentralized application (DApp) designed for automated, immutable, and proportional ERC20 token distribution among multiple pre-defined recipients. This system completely bypasses traditional financial intermediaries by encoding exact share distributions directly into the smart contract logic.
+### Design × Development
 
-## 🚀 Overview & Architecture
+.˚⊹₊⟡⋆
 
-The system utilizes a clean, modular smart contract architecture optimized for trust, transparency, and gas efficiency:
-* **`ERC20PaymentSplitter.sol`**: Manages the proportional allocation of incoming ERC20 token deposits using a pull-based payment lifecycle, keeping track of total shares, individual payouts, and historical records.
-* **`MockERC20.sol`**: An extension of the OpenZeppelin ERC20 standard utilized for testing and simulating real-world ERC20 asset transactions.
+An Ethereum-based decentralized utility application designed for automated, immutable, and proportional ERC20 token distribution among multiple pre-allocated recipients. Built using strict type constraints and modular smart contract structures to bypass third-party financial intermediaries securely.
 
-## 🛠️ Tech Stack & Tools
+---
 
-* **Smart Contracts:** Solidity (^0.8.20), OpenZeppelin Contracts
-* **Development Environment:** Hardhat
-* **Testing & Library Support:** Ethers.js, Chai, Mocha
-* **Modeling standards:** UML Class Diagrams & Use Case Diagrams
+## ✦ About
 
-## 💻 Code Style Guidelines Implemented
+This repository represents a decentralized revenue-sharing architecture engineered to process ecosystem splits, automated royalties, or joint venture stake claims. Utilizing a secure, pull-based withdrawal system, the platform ensures total transactional auditability and deterministic payment tracking directly on the ledger.
 
-Following industry standard practices for smart contract readability and security, the codebase adheres strictly to the following parameters:
-* **Function Parameters:** Prefixed with an underscore in camelCase (`_parameterName`).
-* **Constants:** Fully capitalized with snake_case word separation (`CONSTANT_NAME`).
-* **State Variables & Methods:** Clear, descriptive camelCase names (`balanceOf`, `totalShares`).
-* **Strict Ordering:** Structured systematically from SPDX Identifiers and Pragma definitions down through State Variables, Events, and Modifiers to Methods.
+The design emphasizes high gas efficiency, strict adherence to established Solidity code styles, and rigorous local environment unit testing to eliminate security and transaction processing vulnerabilities prior to network deployment.
 
-## 🧪 Unit Testing Framework
+₊⊹
 
-The comprehensive test suite in `test/ERC20PaymentSplitter.test.js` exercises the smart contract lifecycle through extensive Hardhat and Ethers.js scenarios. Tests utilize standard lifecycle hooks (`before`, `beforeEach`) and assert the robustness of contract state handling:
-* **Deployment Validation:** Assures explicit owner initialization and verifies initial zero state for total shares.
-* **Payee Management:** Validates state logic when managing and initializing contract payees.
-* **Asset Lifecycle:** Tests successful token transactions, checking pre-balances, post-balances, and auditing block properties.
-* **Error & Security Handling:** Validates explicit operational parameters via `require`, `revert`, and `assert` logic.
+---
 
-## 🏃‍♂️ How to Run Locally
+## ✦ Features
 
-1. Clone the repository and navigate to the project directory.
-2. Install the necessary development dependencies:
-   ```bash
-   npm install
-   ```
-3. Compile the Solidity smart contracts:
-   ```bash
-   npx hardhat compile
-   ```
-4. Execute the unit test suite:
-   ```bash
-   npx hardhat test
-   ```
-   
+🌱 **Proportional Token Allocation** • Algorithmic distribution of incoming ERC20 token payloads calculated securely against predefined payee share weights.  
+🌱 **Pull-Based Claims Logic** • Secure accounting models letting individual payees trigger automated withdrawals independently without affecting co-payee balances.  
+🌱 **Automated Operations Suite** • Custom utility integration scripts to cleanly handle localized smart contract deployment, payee addition, and token allocations.  
+🌱 **Strict Code Compliance** • Engineering parameters written precisely with underscored function arguments, clear camelCase qualifiers, and systematic file positioning.  
+🌱 **Automated Integrity Tests** • Comprehensive unit testing workflows covering system deployment constraints, payee registration edge cases, and post-transaction balances.  
+
+₊⊹
+
+---
+
+## ✦ Tech
+
+![Solidity](https://img.shields.io/badge/Solidity-0f172a?style=flat&logo=solidity&logoColor=white&labelColor=0f172a) •
+![Ethereum](https://img.shields.io/badge/Ethereum-0f172a?style=flat&logo=ethereum&logoColor=white&labelColor=0f172a) •
+![Hardhat](https://img.shields.io/badge/Hardhat-0f172a?style=flat&logo=hardhat&logoColor=white&labelColor=0f172a) •
+![JavaScript](https://img.shields.io/badge/JavaScript-0f172a?style=flat&logo=javascript&logoColor=white&labelColor=0f172a)
+
+₊⊹
+
+---
+
+## ✦ Architecture
+
+```text
+erc20-payment-splitter/
+├── package.json
+├── hardhat.config.js         # Local Hardhat blockchain network configuration
+├── README.md
+├── LICENSE
+├── contracts/                # Core immutable smart contract assets
+│   ├── ERC20PaymentSplitter.sol # Core revenue distribution state machine
+│   └── MockERC20.sol         # Mintable test token asset simulation
+├── scripts/                  # Automated operational utility parameters
+│   ├── deploy.js             # Contract compilation deployment script
+│   ├── add-payees.js         # Batch address allocation engine
+│   └── distribute-tokens.js  # Automated token distribution handler
+└── test/                     # Hardhat local runtime testing suite
+    └── ERC20PaymentSplitter.test.js # Behavioral assertion lifecycle checks
+
+```
+
+₊⊹
+
+---
+
+## ✦ Operations
+
+To compile smart contracts and run the automated verification test framework locally, execute the following commands inside your development terminal:
+
+```bash
+# Ingest local node dependency layers
+npm install
+
+# Compile Solidity smart contracts
+npx hardhat compile
+
+# Run the automated unit testing suite
+npx hardhat test
+```
+₊⊹
+
+---
+
+## ✦ Academic Verification
+
+* **Institution** • Middlesex University London (Dept. of Computer Science)
+* **Module Core** • Blockchain Development (CST4125 Coursework)
+* **Academic Peer Collaboration** • Developed jointly alongside Deepak Kumar
+
+₊⊹
+
+---
+
+## ✦ Connect
+
+[LinkedIn](https://www.linkedin.com/in/mirepatel) • [Portfolio](https://mirepatel.framer.website/) • [Email](mailto:mirepatel@gmail.com)
+
+---
+
+**C**ode
+
+**C**reativity
+
+**C**ontinuous Learning
+
+•··
